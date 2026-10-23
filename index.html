@@ -1,13 +1,218 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LegendaryBallers</title>
+    <title>TechLearn | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>LegendaryBallers</h1>
-    
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="bi bi-mortarboard-fill logo-icon"></i>
+            Tech<span>Learn</span>
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-flex gap-2">
+                <a href="login.html" class="btn login-btn">Log In</a>
+                <a href="signup.html" class="btn btn-primary signup-btn">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="hero-section" id="home">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <span class="hero-label">LEARN TODAY • BUILD TOMORROW</span>
+                <h1>Upgrade Your Skills with <span>Tech Knowledge</span></h1>
+                <p class="hero-text">
+                    Discover technology, learn new skills and build your future
+                    with beginner-friendly learning paths.
+                </p>
+                <form action="courses.html" class="search-box">
+                    <i class="bi bi-search"></i>
+                    <input type="search" name="search"
+                           placeholder="Search HTML, Python, Cybersecurity..."
+                           aria-label="Search courses">
+                    <button class="btn btn-primary" type="submit">Explore</button>
+                </form>
+                <div class="hero-features">
+                    <span><i class="bi bi-lightning-fill"></i> Learn at your pace</span>
+                    <span><i class="bi bi-shield-check"></i> Beginner friendly</span>
+                </div>
+                <a href="courses.html" class="btn btn-primary mt-4">Explore Courses →</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-art">
+                    <div class="code-window">
+                        <div class="window-top">
+                            <span></span><span></span><span></span>
+                            <p>your-future.html</p>
+                        </div>
+                        <div class="code-content">
+                            <p><span class="code-purple">&lt;html&gt;</span></p>
+                            <p class="indent"><span class="code-blue">&lt;h1&gt;</span> Hello, Developer!</p>
+                            <p class="indent"><span class="code-green">&lt;p&gt;</span> Learn. Build. Grow.</p>
+                            <p><span class="code-purple">&lt;/html&gt;</span></p>
+                        </div>
+                        <div class="art-bottom">
+                            <i class="bi bi-code-slash"></i>
+                            <div><strong>Keep Learning</strong><small>Keep Building</small></div>
+                            <i class="bi bi-rocket-takeoff-fill rocket"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-section" id="categories">
+    <div class="container">
+        <div class="section-heading">
+            <div><h2>Explore Technology</h2><p>Choose the skills you want to learn.</p></div>
+            <a href="categories.html">All categories →</a>
+        </div>
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="web-development.html" class="category-card">
+                    <i class="bi bi-code-slash category-blue"></i>
+                    <h3>Web Development</h3><p>HTML, CSS, Bootstrap</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="courses.html" class="category-card">
+                    <i class="bi bi-cpu category-purple"></i>
+                    <h3>AI & Data</h3><p>AI and data skills</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="cybersecurity.html" class="category-card">
+                    <i class="bi bi-shield-lock category-green"></i>
+                    <h3>Cybersecurity</h3><p>Digital safety</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="design.html" class="category-card">
+                    <i class="bi bi-palette category-orange"></i>
+                    <h3>UI/UX Design</h3><p>Design and creativity</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="courses.html" class="category-card">
+                    <i class="bi bi-cloud category-cyan"></i>
+                    <h3>Cloud Computing</h3><p>Cloud technologies</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="categories.html" class="category-card">
+                    <i class="bi bi-gear category-pink"></i>
+                    <h3>More Skills</h3><p>Explore other skills</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-section courses-section" id="courses">
+    <div class="container">
+        <div class="section-heading">
+            <div><h2>Popular Courses</h2><p>Find your next learning adventure.</p></div>
+            <a href="courses.html">View all courses →</a>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="course-card">
+                    <div class="course-image course-html">
+                        <span class="level-badge">Beginner</span>
+                        <i class="bi bi-filetype-html"></i><i class="bi bi-filetype-css"></i>
+                    </div>
+                    <div class="course-body">
+                        <h3>Web Development</h3><p>Build your first website.</p>
+                        <a class="course-link" href="web-development.html">View Course →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="course-card">
+                    <div class="course-image course-python">
+                        <span class="level-badge">Beginner</span><i class="bi bi-filetype-py"></i>
+                    </div>
+                    <div class="course-body">
+                        <h3>Python for Beginners</h3><p>Discover programming basics.</p>
+                        <a class="course-link" href="python.html">View Course →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="course-card">
+                    <div class="course-image course-security">
+                        <span class="level-badge intermediate">Intermediate</span>
+                        <i class="bi bi-shield-lock-fill"></i>
+                    </div>
+                    <div class="course-body">
+                        <h3>Cybersecurity</h3><p>Learn about online safety.</p>
+                        <a class="course-link" href="cybersecurity.html">View Course →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="course-card">
+                    <div class="course-image course-design">
+                        <span class="level-badge">Beginner</span><i class="bi bi-bezier2"></i>
+                    </div>
+                    <div class="course-body">
+                        <h3>UI/UX Design</h3><p>Design digital experiences.</p>
+                        <a class="course-link" href="design.html">View Course →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-box">
+            <div class="cta-icon"><i class="bi bi-rocket-takeoff-fill"></i></div>
+            <div class="cta-text">
+                <h2>Start Your Tech Journey Today</h2>
+                <p>Discover new skills and build your digital future.</p>
+            </div>
+            <a href="signup.html" class="btn btn-primary">Join TechLearn →</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <a href="index.html" class="footer-brand"><i class="bi bi-mortarboard-fill"></i> TechLearn</a>
+        <p>Learn today. Build tomorrow.</p>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Log In</a>
+        <hr>
+        <p class="copyright">© 2026 TechLearn</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
